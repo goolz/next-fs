@@ -35,6 +35,8 @@ services:
       - "5060:5060"
     volumes:
       - ./freeswitch:/etc/freeswitch
+      - ./freeswitch/scripts:/usr/share/freeswitch/scripts
+      - .freeswitch/tmp:/tmp
 
 volumes:
   pg_data:
